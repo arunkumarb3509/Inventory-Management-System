@@ -1,0 +1,15 @@
+<div class="container my-4">
+  <h2 class="text-center mb-4 text-primary fw-bold">Inventory Management System</h2>
+
+  <nav class="nav justify-content-center mb-4 bg-light p-3 rounded shadow-sm">
+    <a class="nav-link px-3" routerLink="/products" routerLinkActive="active">Products</a>
+    <a class="nav-link px-3" routerLink="/create/product" routerLinkActive="active">Create Product</a>
+    <a class="nav-link px-3" routerLink="/inventory/inward" routerLinkActive="active">Inward</a>
+    <a class="nav-link px-3" routerLink="/inventory/outward" routerLinkActive="active">Outward</a>
+    <a class="nav-link px-3" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+  </nav>
+
+  <hr>
+
+  <router-outlet></router-outlet>
+</div>

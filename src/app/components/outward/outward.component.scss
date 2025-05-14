@@ -1,0 +1,12 @@
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+button {
+  font-weight: 600;
+}

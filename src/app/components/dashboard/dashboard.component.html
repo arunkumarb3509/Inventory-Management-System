@@ -1,0 +1,9 @@
+<div *ngIf="data">
+  <h2>Total Products: {{ data.totalProducts }}</h2>
+  <h3>Low Stock Products:</h3>
+  <ul>
+    <li *ngFor="let item of data.lowStockProducts" style="color: red">
+      {{ item.name }} - Stock: {{ item.currentStock }}
+    </li>
+  </ul>
+</div>

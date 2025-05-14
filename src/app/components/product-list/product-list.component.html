@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr><th>Name </th> <th>Stock </th> <th>MinQty</th> <th>Actions</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products" [style.color]="p.currentStock < p.minQty ? 'red' : 'black'">
+      <td>{{p.name}}</td>
+      <td>{{p.currentStock}}</td>
+      <td>{{p.minQty}}</td>
+      <td>
+        <a [routerLink]="['/products/edit', p.id]">Edit</a> |
+        <button (click)="deleteProduct(p.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
