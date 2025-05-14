@@ -1,6 +1,5 @@
 <div class="container my-5">
 
-  <!-- Form -->
   <form [formGroup]="form" (ngSubmit)="onSubmit()" 
         class="p-4 border rounded shadow-sm bg-light mb-4" style="max-width: 600px; margin: auto;">
           <h4 class="text-center text-primary mb-4">Product Entry</h4>
@@ -17,24 +16,4 @@
 
     <button type="submit" class="btn btn-success w-100">Save</button>
   </form>
-
-  <!-- Table -->
-  <div class="table-responsive mt-5" *ngIf="submittedData.length > 0">
-    <table class="table table-bordered table-striped text-center shadow-sm">
-      <thead class="table-primary">
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Min Qty</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of submittedData; let i = index">
-          <td>{{ i + 1 }}</td>
-          <td>{{ item.name }}</td>
-          <td>{{ item.minQty }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 </div>
